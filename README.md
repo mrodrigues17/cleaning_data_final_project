@@ -65,5 +65,5 @@ final_dataset <- dcast(melted_dataset, subjectid + activity~variable, mean)
 ```
 This is now the final tidy data set that is ready for analysis. We can save this as a "txt" file using write.table
 ```
-write.table(final_dataset, file = "final_dataset.txt")
+write.table(final_dataset, file = "final_dataset.txt", row.names = FALSE)
 ```
