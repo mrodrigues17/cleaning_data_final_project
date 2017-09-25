@@ -62,5 +62,5 @@ final_dataset <- dcast(melted_dataset, subjectid + activity~variable, mean)
 
 #a glimpse() at the final data set shows that means are calculated for each subject, for each activity
 #turn this data set into a txt file
-write.table(final_dataset, file = "final_dataset.txt")
+write.table(final_dataset, file = "final_dataset.txt", row.names = FALSE)
 
